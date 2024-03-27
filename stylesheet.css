@@ -41,7 +41,9 @@
   Customize the layout and display of the chat body, and the conversation's metadata
 */
 
-/* .vfrc-chat {} */
+.vfrc-chat {
+  font-size: 50px;
+}
 
 /* .vfrc-chat--dialog {} */
 
