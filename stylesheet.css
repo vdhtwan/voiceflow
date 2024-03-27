@@ -53,7 +53,9 @@
 
 /* .vfrc-message {} */
 
-/* .vfrc-timestamp {} */
+.vfrc-timestamp {
+  font-size: 50px;
+}
 
 
 /*
