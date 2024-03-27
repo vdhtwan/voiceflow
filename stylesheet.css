@@ -41,9 +41,7 @@
   Customize the layout and display of the chat body, and the conversation's metadata
 */
 
-.vfrc-chat {
-  font-size: 50px;
-}
+.vfrc-chat {}
 
 /* .vfrc-chat--dialog {} */
 
@@ -55,9 +53,7 @@
 
 /* .vfrc-message {} */
 
-.vfrc-timestamp {
-  font-size: 50px;
-}
+.vfrc-timestamp {}
 
 
 /*
@@ -121,6 +117,8 @@
 
 /* .vfrc-input {} */
 
-/* .vfrc-chat-input--button {} */
+.vfrc-chat-input--button {
+  color: blue;
+}
 
 /* .vfrc-footer--watermark {} */
