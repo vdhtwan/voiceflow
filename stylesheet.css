@@ -41,7 +41,7 @@
   Customize the layout and display of the chat body, and the conversation's metadata
 */
 
-.vfrc-chat {}
+/* .vfrc-chat {} */
 
 /* .vfrc-chat--dialog {} */
 
@@ -51,9 +51,9 @@
 
 /* .vfrc-chat--status {} */
 
-/* .vfrc-message {} */
+ .vfrc-message {} 
 
-.vfrc-timestamp {}
+/* .vfrc-timestamp {} */
 
 
 /*
@@ -72,7 +72,9 @@
 
 /* .vfrc-system-response--actions {} */
 
-/* .vfrc-button {} */
+ .vfrc-button {
+ margin: 100px;
+ }
 
 /* .vfrc-image {} */
 
@@ -100,8 +102,9 @@
 
   Customize the style and layout of users response messages.
 */
-
-/* .vfrc-user-response {} */
+ .vfrc-user-response {
+	margin: 100px;
+ } 
 
 /* Targeted styling for just the User messages */
 /* .vfrc-user-response .vfrc-message {} */
@@ -117,9 +120,6 @@
 
 /* .vfrc-input {} */
 
-.vfrc-chat-input--button {
-  background-color: blue;
-  
-}
+/* .vfrc-chat-input--button {} */
 
 /* .vfrc-footer--watermark {} */
