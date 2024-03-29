@@ -6,13 +6,54 @@
   Customize the page that the chat bubble lives on
 */
 
-/* .voiceflow-chat {} */
+ /* .voiceflow-chat {} */
 
-/* .vfrc-launcher {} */
+ /*Dit is voor het pictogram rechtsonderin op de website, 
+ - postimg uplaoden, directe link erin zetten
+ - width en height
+ - size: zelfde als width en height
+ - postition: center
+ - repeat: no-repeat
+ - niet vergeten om een transparant plaatje in voiceflow/integrations te uploaden
+ - box-shadow en border: none
+ */
 
-/* .vfrc-chat--overlay {} */
+ /* https://i.postimg.cc/MKj8T1Nt/AI-6.png */
+ /* https://i.postimg.cc/5tyKLbh9/AI-3.png */
+/* https://i.postimg.cc/BQWmTzmW/Ontwerp-zonder-titel-6.png */
+.vfrc-launcher {
+  width: 100px;
+  height: 100px;
+  background-image: url(https://i.postimg.cc/BQWmTzmW/Ontwerp-zonder-titel-6.png);
+  background-color: transparent;
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  border: none;
+}
 
-/* .vfrc-prompt {} */
+
+/* https://i.postimg.cc/V66FnDD2/Ontwerp-zonder-titel-10.png Lelijk oranje geel*/
+
+.vfrc-launcher:hover{
+  width: 100px;
+  height: 100px;
+  /*
+  background-image: url();
+  */
+  background-color: transparent;
+  background-size: 100px 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: none;
+  border: none;
+}
+
+
+/* .vfrc-chat--overlay {} */ /*Deze heb je bijna nooit nodig*/
+
+/* .vfrc-prompt {} */ /*Verschijnt als je op X klikt*/
 
 
 /*
@@ -22,17 +63,32 @@
   Note that changes to the assistant information here will be shared across other elements that consume this styling.
 */
 
-/* .vfrc-header {} */
+/*Hiermee pas je de header aan, kleur, padding etc*/
+.vfrc-header {
+  background: linear-gradient(90deg, #EEFF1D, #fffb1d);
+}
+
+/* Hiermee pas je de titel in de header aan */
+.vfrc-header h1 {
+  color: rgb(36, 36, 36);
+}
 
 /* .vfrc-assistant-info {} */
 
-/* .vfrc-assistant-info--title {} */
+/* Hiermee pas je de titel in de chat aan */
+.vfrc-assistant-info--title {
+  color: rgb(0, 0, 0);
+
+}
 
 /* .vfrc-assistant-info--description {} */
 
-/* .vfrc-avatar {} */
+/*.vfrc-avatar {}*/
 
-/* .vfrc-icon {} */
+/* gebruik dit om de close en minimize icoontjes van kleur te veranderen */
+.vfrc-header .vfrc-icon svg{
+  color: black;
+ } 
 
 
 /*
@@ -41,7 +97,7 @@
   Customize the layout and display of the chat body, and the conversation's metadata
 */
 
-/* .vfrc-chat {} */
+ /*.vfrc-chat {} */
 
 /* .vfrc-chat--dialog {} */
 
@@ -51,9 +107,9 @@
 
 /* .vfrc-chat--status {} */
 
- .vfrc-message {} 
+/* .vfrc-message {} */ /*Deze past beide chatballonnen aan, zowel gebruiker als bot, hoef je eigenlijk nooit te gebruiken, gebruik de css onderaan om ze apart aan te passen*/
 
-/* .vfrc-timestamp {} */
+/* .vfrc-timestamp { } */ /*Deze past de tijd stijl aan, hoef je eigenlijk nooit te gebruiken*/
 
 
 /*
@@ -72,9 +128,7 @@
 
 /* .vfrc-system-response--actions {} */
 
- .vfrc-button {
- margin: 100px;
- }
+/* .vfrc-button { } */
 
 /* .vfrc-image {} */
 
@@ -90,26 +144,48 @@
 
 /* .vfrc-carousel--button {} */
 
+
+
 /* Targeted styling for just the Assistant messages. */
-/* .vfrc-system-response .vfrc-message {} */
+/*Deze past de chatballon aan van de bot*/
+/*
+ .vfrc-system-response .vfrc-message {
+	
+}
+*/
 
 /* Targeted styling for just the Assistant buttons. */
-/* .vfrc-system-response .vfrc-button {} */
 
-
+/* .vfrc-system-response .vfrc-button {}  */
+/*.vfrc-button:hover{
+}
+*/
 /*
   USER RESPONSES
 
   Customize the style and layout of users response messages.
 */
- .vfrc-user-response {
-	margin: 100px;
- } 
+ /* .vfrc-user-response { } */
 
 /* Targeted styling for just the User messages */
-/* .vfrc-user-response .vfrc-message {} */
+.vfrc-user-response .vfrc-message {
+	background-color: #EEFF1D;
+  color: black;
+}
 
+/**/
 
+/* ------------Chat input gebruiker ------------------------------------------*/
+
+/*Verstuur knop*/
+/*.vfrc-chat-input--button {}*/ /*Weet niet hoe dit werkt*/
+
+/*Hiermee pas je de stijl aan van de tekst input v/d gebruiker*/
+ .vfrc-input {
+  font-size: 100px;
+ } 
+
+/* VOICEFLOW BRANDING HOEF JE NIET TE GEBRUIKEN */
 /*
   FOOTER
 
@@ -119,7 +195,5 @@
 /* .vf-footer {} */
 
 /* .vfrc-input {} */
-
-/* .vfrc-chat-input--button {} */
 
 /* .vfrc-footer--watermark {} */
